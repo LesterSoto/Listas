@@ -1,7 +1,9 @@
+import lde.ListaDE;
 import lse.ListaSE;
 
 public class Main {
     public static void main(String[] args) {
+        /*
         ListaSE listaSE = new ListaSE();
 
         System.out.println(listaSE.estaVacio());
@@ -17,5 +19,24 @@ public class Main {
         listaSE.eliminar();
 
         listaSE.mostrar();
+         */
+        ListaDE listaDE = new ListaDE();
+        System.out.println(listaDE.estaVacio());
+
+        for (int i = 20; i > 0; i--) {
+            listaDE.insertar(i);
+        }
+
+        System.out.println(listaDE.estaVacio());
+
+        listaDE.mostrar();
+
+        listaDE.eliminar();
+        listaDE.eliminar();
+        listaDE.eliminar();
+
+        listaDE.mostrar();
+
+        listaDE.mostrarAtraz();
     }
 }

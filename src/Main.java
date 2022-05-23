@@ -1,3 +1,4 @@
+import lcde.ListaCDE;
 import lcse.ListaCSE;
 import lde.ListaDE;
 import lse.ListaSE;
@@ -52,6 +53,7 @@ public class Main {
 
         System.out.println(listaCSE.tamano());
 
+<<<<<<< HEAD
         listaCSE.eliminarFin();
         listaCSE.eliminarFin();
 
@@ -69,5 +71,31 @@ public class Main {
         cola.eliminar();
         
         cola.mostrar();
+=======
+        //listaCSE.eliminarFin();
+        //listaCSE.eliminarFin();
+
+        //listaCSE.mostrar();
+
+        listaCSE.mostrarCircular(2);
+         */
+        ListaCDE listaCDE = new ListaCDE();
+        System.out.println(listaCDE.estaVacia());
+
+        for (int i = 1; i <= 10; i++) {
+            listaCDE.insertarFinal(i);
+        }
+        listaCDE.mostrar();
+
+        listaCDE.eliminarFin();
+        listaCDE.eliminarFin();
+        listaCDE.eliminarFin();
+
+        listaCDE.mostrar();
+
+        listaCDE.mostrarAdelante(3);
+
+        listaCDE.mostrarAtraz(3);
+>>>>>>> 91a8e0c7bfee529d03812ebf98f785c547c62362
     }
 }

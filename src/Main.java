@@ -1,6 +1,7 @@
 import lcse.ListaCSE;
 import lde.ListaDE;
 import lse.ListaSE;
+import pc.Cola;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,7 +40,7 @@ public class Main {
         listaDE.mostrar();
 
         listaDE.mostrarAtraz();
-         */
+
         ListaCSE listaCSE = new ListaCSE();
         System.out.println(listaCSE.estaVacio());
         System.out.println(listaCSE.tamano());
@@ -51,11 +52,21 @@ public class Main {
 
         System.out.println(listaCSE.tamano());
 
-        /*listaCSE.eliminarFin();
+        listaCSE.eliminarFin();
         listaCSE.eliminarFin();
 
         listaCSE.mostrar();
-         */
         listaCSE.mostrarCircular(2);
+         */
+        Cola cola = new Cola();
+        System.out.println(cola.estaVacio());
+
+        for (int i = 1; i <= 5; i++) {
+            cola.insertar(i);
+        }
+        cola.mostrar();
+        cola.eliminar();
+        cola.eliminar();
+        cola.mostrar();
     }
 }

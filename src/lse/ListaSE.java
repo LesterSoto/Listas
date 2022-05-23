@@ -1,7 +1,7 @@
 package lse;
 
 public class ListaSE {
-    Nodo primeiro;
+    protected Nodo primeiro;
 
     public ListaSE(){
         primeiro = null;
@@ -10,6 +10,7 @@ public class ListaSE {
     public boolean estaVacio(){
         return primeiro == null;
     }
+
     public void insertar(Object dato){
         if(estaVacio()){
             Nodo nuevo = new Nodo(dato,null);

@@ -67,6 +67,7 @@ public class Main {
         cola.mostrar();
         cola.eliminar();
         cola.eliminar();
+        
         cola.mostrar();
     }
 }

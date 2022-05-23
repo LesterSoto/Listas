@@ -16,7 +16,6 @@ public class Cola extends ListaSE {
                 }
                 Nodo nuevo = new Nodo(dato,null);
                 ultimo.setSiguiente(nuevo);
-
             }
     }
 }

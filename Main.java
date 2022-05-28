@@ -1,5 +1,7 @@
+import lcse.ListaCSE;
+import lde.ListaDE;
 import lse.ListaSE;
-<<<<<<< HEAD
+import Lcde.ListaCDE;
 
 public class Main {
     public static void main(String[] args) {
@@ -50,31 +52,30 @@ public class Main {
 
         System.out.println(listaCSE.tamano());
 
-<<<<<<< HEAD
         listaCSE.eliminarFin();
         listaCSE.eliminarFin();
 
         listaCSE.mostrar();
+
         listaCSE.mostrarCircular(2);
+
          */
+        ListaCDE listaCDE = new ListaCDE();
+        System.out.println(listaCDE.estaVacia());
 
-=======
-import pc.Cola;
-import pc.Pila;
-public class Main {
-    public static void main(String[] args) {
-        Pila pila = new Pila();
-        System.out.println(pila.estaVacio());
-
-        for (int i = 1; i <= 5; i++) {
-            pila.insertar(i);
+        for (int i = 1; i <= 10; i++) {
+            listaCDE.insertarFinal(i);
         }
-        pila.mostrar();
+        listaCDE.mostrar();
 
-        pila.eliminar();
-        pila.eliminar();
+        listaCDE.eliminarFin();
+        listaCDE.eliminarFin();
+        listaCDE.eliminarFin();
 
-        pila.mostrar();
->>>>>>> 547a343080dace0158cca693a95c44c8bb81f0f8
+        listaCDE.mostrar();
+
+        listaCDE.mostrarAdelante(3);
+
+        listaCDE.mostrarAtraz(3);
     }
 }
